@@ -1,0 +1,19 @@
+nav.navbar {
+  background-color: var(--main-color) !important;
+}
+
+.navbar-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: 0.5s;
+  padding: 10px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.navbar-nav a.active {
+  background-color: var(--second-color);
+  color: #fff;
+}

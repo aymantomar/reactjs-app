@@ -1,0 +1,55 @@
+:root {
+  --main-color: #2c3e50;
+  --second-color: #1abc9c;
+}
+
+.bgPrimary {
+  background-color: var(--main-color);
+}
+.bgSecondry {
+  background-color: var(--second-color);
+}
+.bg-Secondry-75 {
+  opacity: 0.75;
+}
+.minHeight {
+  min-height: 100vh;
+}
+
+.title h1 {
+  position: relative;
+}
+.title h1::after {
+  position: absolute;
+  content: " ";
+  border-bottom: 5px solid #fff;
+  left: 50%;
+  width: 250px;
+  height: 10px;
+  transform: translateX(-125px);
+  bottom: -61%;
+}
+.title i {
+  background: #1abc9c;
+  z-index: 10;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+.title.darkTitle h1::after {
+  border-color: var(--main-color) !important;
+}
+.darkTitle i {
+  color: var(--main-color);
+  background: #fff;
+}
+.portfolio-info {
+  opacity: 0;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.portfolio:hover .portfolio-info {
+  cursor: pointer;
+  transition: 0.5s;
+  opacity: 0.75;
+}
